@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omogbolahan Plumbing Work offers plumbing installation, repairs, maintenance, leak detection and drainage services in Kakuri and Kaduna South, Kaduna State, Nigeria.">
+  <meta name="theme-color" content="#12304a">
+  <title>Omogbolahan Plumbing Work | Quality Work, No Leakage</title>
+  <style>
+    :root {
+      --navy: #12304a;
+      --blue: #1677b8;
+      --aqua: #19b8c7;
+      --ink: #172b3a;
+      --muted: #5c6d79;
+      --paper: #f4f8fb;
+      --white: #fff;
+      --line: #dce7ed;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); line-height: 1.6; background: var(--white); }
+    a { color: inherit; }
+    .topbar { background: var(--navy); color: #eaf7ff; padding: 9px 5%; text-align: center; font-size: .9rem; }
+    header { background: white; position: sticky; top: 0; z-index: 5; border-bottom: 1px solid var(--line); }
+    .nav { max-width: 1120px; margin: auto; padding: 14px 22px; display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+    .brand { display: flex; gap: 11px; align-items: center; text-decoration: none; font-weight: 800; color: var(--navy); line-height: 1.2; }
+    .brand-mark { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--navy); color: white; font-size: 1.45rem; }
+    .brand small { display: block; color: var(--blue); font-weight: 700; font-size: .72rem; margin-top: 4px; letter-spacing: .06em; }
+    .navlinks { display: flex; gap: 22px; align-items: center; }
+    .navlinks a { text-decoration: none; font-weight: 700; font-size: .92rem; }
+    .navlinks a:hover { color: var(--blue); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--aqua); color: #052b37; font-weight: 800; text-decoration: none; border-radius: 9px; padding: 13px 18px; border: 0; }
+    .btn:hover { filter: brightness(.96); transform: translateY(-1px); }
+    .btn-outline { border: 2px solid rgba(255,255,255,.7); color: white; background: transparent; }
+    .hero { background: linear-gradient(115deg, rgba(10,35,55,.97), rgba(18,77,105,.91)), radial-gradient(circle at 80% 20%, #1cb8c6, transparent 45%); color: white; overflow: hidden; }
+    .hero-inner { max-width: 1120px; margin: auto; padding: 82px 22px 76px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 44px; }
+    .eyebrow { color: #7fe8ef; text-transform: uppercase; letter-spacing: .13em; font-size: .78rem; font-weight: 800; }
+    h1 { font-size: clamp(2.3rem, 5vw, 4.25rem); line-height: 1.06; margin: 14px 0 18px; letter-spacing: -.035em; }
+    .hero p { color: #e1edf4; max-width: 590px; font-size: 1.1rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+    .hero-card { border: 1px solid rgba(255,255,255,.23); background: rgba(255,255,255,.09); padding: 28px; border-radius: 20px; backdrop-filter: blur(4px); }
+    .hero-card .big-icon { font-size: 4rem; }
+    .hero-card h2 { font-size: 1.45rem; margin: 8px 0; }
+    .hero-card p { font-size: .98rem; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 25px; color: #e7f6fb; font-size: .9rem; }
+    .trust-row span::before { content: "✓"; color: #7fe8ef; font-weight: 900; margin-right: 7px; }
+    section { padding: 70px 22px; }
+    .container { max-width: 1080px; margin: auto; }
+    .section-head { max-width: 690px; margin: 0 auto 35px; text-align: center; }
+    .section-head .eyebrow { color: var(--blue); }
+    h2.section-title { color: var(--navy); font-size: clamp(1.8rem, 3vw, 2.55rem); line-height: 1.15; margin: 10px 0 13px; }
+    .section-head p { color: var(--muted); margin: 0; }
+    .services { background: var(--paper); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: white; border: 1px solid var(--line); border-radius: 15px; padding: 25px; box-shadow: 0 8px 25px rgba(18,48,74,.04); }
+    .card-icon { width: 50px; height: 50px; display: grid; place-items: center; background: #e3f8fa; border-radius: 13px; font-size: 1.55rem; }
+    .card h3 { color: var(--navy); margin: 16px 0 7px; }
+    .card p { color: var(--muted); margin: 0; font-size: .96rem; }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 45px; align-items: center; }
+    .feature-panel { background: linear-gradient(145deg, #e5f9fb, #f1f7fb); border-radius: 20px; padding: 32px; min-height: 280px; display: flex; flex-direction: column; justify-content: center; }
+    .feature-panel .pipe-art { font-size: 4rem; }
+    .feature-panel strong { color: var(--navy); font-size: 1.45rem; line-height: 1.25; }
+    .about-copy p { color: var(--muted); }
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { margin: 10px 0; }
+    .checklist li::before { content: "✓"; display: inline-grid; place-items: center; width: 23px; height: 23px; margin-right: 10px; border-radius: 50%; background: #dcf8f2; color: #08785e; font-weight: 900; }
+    .cta { background: var(--navy); color: white; }
+    .cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 25px; }
+    .cta h2 { margin: 0 0 8px; font-size: clamp(1.7rem, 3vw, 2.35rem); }
+    .cta p { margin: 0; color: #d3e4ee; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 35px; }
+    .contact-details { display: grid; gap: 14px; }
+    .contact-item { display: flex; align-items: flex-start; gap: 13px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; }
+    .contact-item .icon { font-size: 1.35rem; }
+    .contact-item strong { display: block; color: var(--navy); }
+    .contact-item span, .contact-item a { color: var(--muted); }
+    .contact-form { background: var(--paper); border-radius: 16px; padding: 25px; }
+    .contact-form label { display: block; font-weight: 700; color: var(--navy); margin: 12px 0 5px; }
+    .contact-form input, .contact-form textarea, .contact-form select { width: 100%; border: 1px solid #cad9e2; border-radius: 8px; padding: 12px; font: inherit; background: white; }
+    .contact-form textarea { min-height: 105px; resize: vertical; }
+    .contact-form .btn { width: 100%; margin-top: 15px; cursor: pointer; font-size: 1rem; }
+    .small-note { color: var(--muted); font-size: .83rem; margin: 12px 0 0; }
+    footer { background: #0b2031; color: #d7e5ee; padding: 28px 22px; text-align: center; }
+    footer strong { color: white; }
+    footer p { margin: 5px 0; font-size: .9rem; }
+    .float-wa { position: fixed; bottom: 18px; right: 18px; z-index: 8; border-radius: 999px; padding: 14px 18px; box-shadow: 0 8px 25px rgba(0,0,0,.2); background: #1fbf70; color: white; text-decoration: none; font-weight: 800; }
+    @media (max-width: 760px) {
+      .nav { padding: 12px 16px; }
+      .navlinks { display: none; }
+      .hero-inner, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-inner { padding: 60px 20px 52px; gap: 30px; }
+      .hero-card { padding: 22px; }
+      section { padding: 55px 18px; }
+      .cards { grid-template-columns: 1fr; }
+      .cta-inner { align-items: flex-start; flex-direction: column; }
+      .feature-panel { min-height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Serving Kakuri, Kaduna South and surrounding areas • Call for plumbing support</div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark">🔧</span>
+        <span>OMOGBOLAHAN<small>PLUMBING WORK</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="btn" href="tel:+2348164601428">Call Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Reliable plumbing services in Kaduna</div>
+          <h1>Quality Work.<br>No Leakage.</h1>
+          <p>Need a dependable plumber? Omogbolahan Plumbing Work provides plumbing installation, repairs and maintenance with a focus on honest service, neat workmanship and practical solutions.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://wa.me/2348164601428?text=Hello%20Omogbolahan%20Plumbing%20Work%2C%20I%20need%20plumbing%20service." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+            <a class="btn btn-outline" href="#services">Explore Services</a>
+          </div>
+          <div class="trust-row"><span>Installation</span><span>Repairs</span><span>Maintenance</span></div>
+        </div>
+        <div class="hero-card">
+          <div class="big-icon">🚰</div>
+          <h2>Plumbing problems? Let's solve them.</h2>
+          <p>From leaking pipes to bathroom fittings and drainage issues, get in touch to discuss the job and arrange a visit.</p>
+          <p><strong>Phone:</strong> +234 816 460 1428</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What we do</div>
+          <h2 class="section-title">Plumbing services you can rely on</h2>
+          <p>Practical solutions for homes, shops, offices and building projects.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="card-icon">🚿</div><h3>Installation</h3><p>Water supply pipes, taps, showers, sinks, toilets and other plumbing fittings.</p></article>
+          <article class="card"><div class="card-icon">🛠️</div><h3>Repairs & Leak Detection</h3><p>Help with leaking pipes, faulty taps, toilet faults, low water flow and other plumbing issues.</p></article>
+          <article class="card"><div class="card-icon">💧</div><h3>Drainage & Maintenance</h3><p>Drainage troubleshooting, routine maintenance and advice to help prevent recurring problems.</p></article>
+          <article class="card"><div class="card-icon">🏠</div><h3>Building Plumbing</h3><p>Plumbing work for new buildings and renovations, coordinated with project requirements.</p></article>
+          <article class="card"><div class="card-icon">📐</div><h3>Drawing Awareness</h3><p>Practical plumbing support informed by building drawings and the layout of the project.</p></article>
+          <article class="card"><div class="card-icon">🤝</div><h3>Consultation</h3><p>Discuss your plumbing problem, required materials and suitable next steps before work begins.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="feature-panel">
+          <div class="pipe-art">🔧 💧</div>
+          <strong>Good workmanship. Honest service. Practical solutions.</strong>
+          <p>Our promise: treat every job with care and communicate clearly with the customer.</p>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">About the business</div>
+          <h2 class="section-title">A plumber focused on solving problems</h2>
+          <p>Omogbolahan Plumbing Work serves customers in Kakuri, Kaduna South and nearby areas. The business is committed to dependable plumbing services, fair communication and quality workmanship.</p>
+          <p>Whether you need a small repair or plumbing support for a building project, get in touch to explain what you need.</p>
+          <ul class="checklist">
+            <li>Clear communication before work starts</li>
+            <li>Careful attention to workmanship</li>
+            <li>Affordable options discussed for your job</li>
+            <li>Installation, repair and maintenance support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Have a plumbing job?</h2>
+          <p>Tell us what is wrong or what you need installed. Let's discuss the best next step.</p>
+        </div>
+        <a class="btn" href="https://wa.me/2348164601428?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20your%20plumbing%20services." target="_blank" rel="noopener">Contact on WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Get in touch</div>
+          <h2 class="section-title">Let's talk about your plumbing needs</h2>
+          <p>Call or send a WhatsApp message to ask about availability and pricing.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <div class="contact-item"><div class="icon">📞</div><div><strong>Phone</strong><a href="tel:+2348164601428">0816 460 1428</a></div></div>
+            <div class="contact-item"><div class="icon">💬</div><div><strong>WhatsApp</strong><a href="https://wa.me/2348164601428" target="_blank" rel="noopener">Chat with us</a></div></div>
+            <div class="contact-item"><div class="icon">📍</div><div><strong>Service area</strong><span>Kakuri, Kaduna South, Kaduna State, Nigeria</span></div></div>
+            <div class="contact-item"><div class="icon">🕒</div><div><strong>Availability</strong><span>Contact us to discuss timing and availability.</span></div></div>
+          </div>
+          <form class="contact-form" id="whatsappForm">
+            <h3 style="margin-top:0;color:#12304a">Request a plumbing service</h3>
+            <label for="customerName">Your name</label>
+            <input id="customerName" name="customerName" placeholder="Enter your name" required>
+            <label for="serviceType">What do you need?</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="">Select a service</option>
+              <option>Plumbing installation</option>
+              <option>Leak repair</option>
+              <option>Drainage problem</option>
+              <option>Bathroom or toilet fittings</option>
+              <option>Building project plumbing</option>
+              <option>Other plumbing issue</option>
+            </select>
+            <label for="details">Describe the job</label>
+            <textarea id="details" name="details" placeholder="Briefly describe the plumbing work you need"></textarea>
+            <button class="btn" type="submit">Send request on WhatsApp</button>
+            <p class="small-note">This form opens WhatsApp with your message prepared. It does not store your details on this website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>OMOGBOLAHAN PLUMBING WORK</strong>
+    <p>Quality Work, No Leakage.</p>
+    <p>Plumbing Installation • Repairs • Maintenance</p>
+    <p>© <span id="year">2026</span> Omogbolahan Plumbing Work. All rights reserved.</p>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/2348164601428?text=Hello%20Omogbolahan%20Plumbing%20Work" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">WhatsApp</a>
+
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('customerName').value.trim();
+      const service = document.getElementById('serviceType').value;
+      const details = document.getElementById('details').value.trim();
+      const message = `Hello Omogbolahan Plumbing Work. My name is ${name}. I need: ${service}. Details: ${details || 'I would like to discuss the job.'}`;
+      window.open('https://wa.me/2348164601428?text=' + encodeURIComponent(message), '_blank', 'noopener');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
